@@ -7,6 +7,8 @@
         <style>
             body {
                 background-color: black;
+                background-image: url("static/background.jpg");
+                background-size: cover;
                 height: 100vh;
                 margin: auto;
                 display: flex;
@@ -19,18 +21,27 @@
             img {
                 margin: 16px;
             }
+            .container {
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+            }
         </style>
         <title>ljstadler</title>
     </head>
     <body>
-        <a href="https://github.com/ljstadler">
-            <img height="32" width="32" src="static/github.svg" />
-        </a>
-        <a href="https://www.linkedin.com/in/ljstadler/">
-            <img height="32" width="32" src="static/linkedin.svg" />
-        </a>
-        <a href="mailto:mail@ljstadler.com">
-            <img height="32" width="32" src="static/mail.svg" />
-        </a>
+        <div class="container">
+            <a href="https://git.ljstadler.com">
+                <img width="48" src="static/forgejo.svg" />
+            </a>
+            <a href="https://github.com/ljstadler">
+                <img width="48" src="static/github.svg" />
+            </a>
+            <a href="https://www.linkedin.com/in/ljstadler">
+                <img width="48" src="static/linkedin.svg" />
+            </a>
+            <a href="mailto:mail@ljstadler.com">
+                <img width="48" src="static/mail.svg" />
+            </a>
+        </div>
     </body>
 </html>
