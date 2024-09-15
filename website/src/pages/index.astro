@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Info from "../components/Info.astro";
+
+import info from "../data/info.json";
+---
+
+<Layout title="Lohan Stadler">
+    <main>
+        <Info {...info} />
+    </main>
+</Layout>
