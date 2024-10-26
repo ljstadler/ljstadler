@@ -1,0 +1,49 @@
+---
+import ArrowIcon from "./ArrowIcon.astro";
+
+interface Props {
+    email: string;
+    github: string;
+    linkedin: string;
+}
+
+const { email, github, linkedin } = Astro.props;
+---
+
+<ul
+    class="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300"
+>
+    <li>
+        <a
+            class="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href={`mailto:${email}`}
+        >
+            <ArrowIcon />
+            <p class="ml-2 h-7">email</p>
+        </a>
+    </li>
+    <li>
+        <a
+            class="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href={`https://github.com/${github}`}
+        >
+            <ArrowIcon />
+            <p class="ml-2 h-7">github</p>
+        </a>
+    </li>
+    <li>
+        <a
+            class="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href={`https://www.linkedin.com/in/${linkedin}`}
+        >
+            <ArrowIcon />
+            <p class="ml-2 h-7">linkedin</p>
+        </a>
+    </li>
+</ul>
