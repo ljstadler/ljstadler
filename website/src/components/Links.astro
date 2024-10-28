@@ -1,5 +1,5 @@
 ---
-import ArrowIcon from "./ArrowIcon.astro";
+import ArrowUpRight from "./ArrowUpRight.astro";
 
 interface Props {
     email: string;
@@ -11,39 +11,39 @@ const { email, github, linkedin } = Astro.props;
 ---
 
 <ul
-    class="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300"
+    class="flex md:flex-row flex-col space-x-0 md:space-x-4 space-y-2 md:space-y-0 mt-8 font-sm text-neutral-600 dark:text-neutral-300"
 >
     <li>
         <a
-            class="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            class="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
             href={`mailto:${email}`}
         >
-            <ArrowIcon />
-            <p class="ml-2 h-7">email</p>
+            <ArrowUpRight />
+            <p class="h-7">email</p>
         </a>
     </li>
     <li>
         <a
-            class="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            class="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
             href={`https://github.com/${github}`}
         >
-            <ArrowIcon />
-            <p class="ml-2 h-7">github</p>
+            <ArrowUpRight />
+            <p class="h-7">github</p>
         </a>
     </li>
     <li>
         <a
-            class="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            class="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
             href={`https://www.linkedin.com/in/${linkedin}`}
         >
-            <ArrowIcon />
-            <p class="ml-2 h-7">linkedin</p>
+            <ArrowUpRight />
+            <p class="h-7">linkedin</p>
         </a>
     </li>
 </ul>
