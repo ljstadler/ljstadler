@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        font-family: "InterVariable", sans-serif;
+    }
+}
+
 :root {
     --background: white;
     --foreground: black;
