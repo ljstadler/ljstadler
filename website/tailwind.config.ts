@@ -10,7 +10,7 @@ const config: Config = {
                 foreground: "var(--foreground)",
             },
             fontFamily: {
-                sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
+                sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
             },
         },
     },
