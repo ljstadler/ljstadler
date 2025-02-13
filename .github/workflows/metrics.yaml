@@ -17,6 +17,6 @@ jobs:
                   plugin_isocalendar: yes
                   plugin_isocalendar_duration: full-year
                   plugin_languages: yes
+                  plugin_languages_ignored: NSIS
                   plugin_topics: yes
-                  plugin_topics_mode: icons
                   plugin_habits: yes
